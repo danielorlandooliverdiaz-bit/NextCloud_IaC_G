@@ -1,0 +1,15 @@
+# añadir al docker compose yml para evitar problemas de confianza con NextCloud y la red TailScale
+environment:
+  - NEXTCLOUD_TRUSTED_DOMAINS=nextcloud-core 192.168.1.* 100.*
+
+# Revisen sus docker-compose.yml. Asegúrense de que los volúmenes no sean temporales.
+
+
+
+ # variables de ENV o Conf de ejemplo para no perder tiempo buscando 
+MYSQL_ROOT_PASSWORD=super_secreta_root
+MYSQL_PASSWORD=nextcloud_pass
+MYSQL_DATABASE=nextcloud
+MYSQL_USER=nextcloud
+NEXTCLOUD_ADMIN_USER=admin
+NEXTCLOUD_ADMIN_PASSWORD=admin_temporal
