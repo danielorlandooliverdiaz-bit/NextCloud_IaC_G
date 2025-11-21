@@ -1,0 +1,117 @@
+# --- 🔐 SECRETOS Y CREDENCIALES (CRÍTICO) ---
+.env
+.env.*
+*.pem
+*.key
+id_rsa
+id_rsa.pub
+secrets/
+credentials/
+
+# --- 🐳 DOCKER Y DATOS ---
+# Ignorar carpetas de volúmenes persistentes (donde viven los datos reales)
+# Ejemplo: /var/lib/docker/volumes mapeados localmente
+data/
+db/
+mysql/
+postgres/
+redis/
+nextcloud_data/
+uptime-kuma-data/
+
+# Ignorar archivos de estado de monitorización
+monitor/uptime-kuma/uptime-kuma-data/
+
+# --- 💾 BASES DE DATOS Y BINARIOS ---
+*.db
+*.sqlite
+*.sqlite3
+*.sql.gz
+*.dump
+*.rdb
+*.aof
+*.log
+
+# --- 🏗️ INFRAESTRUCTURA COMO CÓDIGO (IaC) ---
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+*.tfvars
+.terraform.lock.hcl
+
+
+# OpenTofu
+
+
+
+
+# Ansible
+*.retry
+
+# --- 🛠️ SISTEMA Y EDITOR ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# --- 📦 BACKUPS ---
+*.tar
+*.tar.gz
+*.zip
+backups/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# --- Datos de Monitorización ---
+monitor/uptime-kuma/uptime-kuma-data/
+*.db
+*.db-shm
+*.db-wal
+
+
